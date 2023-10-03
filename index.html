@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="modal-block" style="visibility:hidden">
+    <div class="mask"></div>
+    <div class="modal-container">
+        <div class="modal">
+            <div class="modal__header">
+                <button class="modal-close">123</button>
+            </div>
+            <div class="modal__content">
+                <div class="modal__name"></div>
+                <div class="modal__birthday"></div>
+                <div class="modal__personal-file"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <img src="ЛОГО.jpg" alt="ЛОГО">
+    <div class="table">
+        <div class="table__row">
+            <div class="table__title">Порядковый номер</div>
+            <div class="table__title">Имя Фамилия</div>
+            <div class="table__title"> Направление обучения</div>
+            <div class="table__title"> Кнопка</div>
+        </div>
+        <div class="table__row">
+            <div class="table__item">1</div>
+            <div class="table__item">Алексей Пеньков</div>
+            <div class="table__item"> Экономика</div>
+            <div class="table__item">
+                <button class="open-modal-button" data-name="Алексей Пеньков" data-birthday="05.03.12"
+                        data-personal-file="1.html">
+                    Дополнительная информация
+                </button>
+            </div>
+        </div>
+        <div class="table__row">
+            <div class="table__item">2</div>
+            <div class="table__item">Вася Пушкин</div>
+            <div class="table__item"> Юридическое</div>
+            <div class="table__item">
+                <button class="open-modal-button" data-name="Вася Пушкин" data-birthday="03.02.10"
+                        data-personal-file="1.html">
+                    Дополнительная информация
+                </button>
+            </div>
+        </div>
+        <div class="table__row">
+            <div class="table__item">3</div>
+            <div class="table__item">Максим Сидоров</div>
+            <div class="table__item"> Информатика</div>
+            <div class="table__item">
+                <button class="open-modal-button" data-name="Максим Сидоров" data-birthday="01.01.10"
+                        data-personal-file="1.html">
+                    Дополнительная информация
+                </button>
+            </div>
+        </div>
+        <div class="table__row">
+            <div class="table__item">4</div>
+            <div class="table__item">Николай Второй</div>
+            <div class="table__item"> Юридический</div>
+            <div class="table__item">
+                <button class="open-modal-button" data-name="Николай Второй" data-birthday="22.11.12"
+                        data-personal-file="1.html">
+                    Дополнительная информация
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
